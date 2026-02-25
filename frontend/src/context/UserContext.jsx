@@ -4,7 +4,7 @@ import axios from "axios";
 export const UserContext = createContext(null);
 
 const UserContextProvider = ({ children }) => {
-  const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:5000";
+  const serverUrl = import.meta.env.VITE_SERVER_URL || "https://virtual-assistant-backend-uhhb.onrender.com";
   const [userData, setUserData] = useState(null);
   const [frontendImage, setFrontendImage] = useState(null);
   const [backendImage, setBackendImage] = useState(null);
